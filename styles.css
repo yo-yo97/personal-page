@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+:root {
+	background-color:rgb(63, 90, 88)
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	font-family: "Noto Sans TC", sans-serif;
+}
+h1 {
+	font-size: 5.4rem;
+	color: white;
+	margin-bottom: 5rem;
+}
+h2 {
+	font-size: 4.2rem;
+	margin-bottom: 4rem;
+}
+.container {
+	width: 100vw;
+	height: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.flex_column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex_center {
+	justify-content: center;
+	align-items: center;
+}
+
+.justify_center {
+	justify-content: center;
+}
+.text_center{
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.btn{
+	font-size: 2.4rem;	/* rem:相對於root層級的大小單位 */
+	padding: 2rem 0;	/* 按鈕的高 */
+	width: 30rem;	/* 按鈕的寬 */
+	text-align: center;
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: rgb(28, 26, 26);
+	/* 漸層 */
+	background: linear-gradient(45deg, rgb(9, 187, 241) 0%, rgb(0, 102, 255) 100%);
+	/* border-radius: 4px; */
+	border-radius: 1rem;
+}
+.btn:hover {
+	cursor: pointer;
+	box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 217, 244, 0.6); 	/* 陰影 */
+	transition: transform 150ms;	/* 動畫 縮放效果 */
+	transform: scale(1.03);	/* 縮放大小 */
+}
+
+/* End Page css */
+.end_form_container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 30rem;
+}
+
+input{
+	margin-bottom: 1rem;
+	width: 20rem;
+	padding: 1.5rem;
+	font-size: 1.8rem;
+	border: none;
+	box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder{
+	color: #aaa;
+}
+#username{
+	margin-bottom: 3rem;
+	width: 100%;
+	outline: none;
+}
+#finalTitle{
+	color: white;
+	text-align: center;
+}
+#end_text{
+	font-size: 2.4rem;
+	color: white;
+	text-align: center;
+}
+
+#saveScoreBtn{
+	border: none;
+}
+.fa-home{
+	margin-left: 1rem;
+	font-size: 2rem;
+	color:rgb(28, 26, 26);
+}
